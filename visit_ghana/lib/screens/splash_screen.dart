@@ -18,7 +18,7 @@ class _SplashState extends State<Splash> {
 
 
   _navigatetohome()async{
-    await Future.delayed(const Duration(milliseconds: 2000), () {} );
+    await Future.delayed(const Duration(milliseconds: 10000), () {} );
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const MyApp()),);
   }
 
@@ -27,7 +27,13 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Center(
         child: Container(
-          child: const Text("Splash Screen",style: TextStyle(fontSize: 24.0,fontWeight: FontWeight.bold ),),
+         decoration: const BoxDecoration(
+    image: DecorationImage(
+    image: AssetImage("assets/images/flag.jpg"),
+    fit: BoxFit.cover,
+    ),
+),
+          child: const Text("VISIT GHANA",style: TextStyle(fontSize: 24.0,fontWeight: FontWeight.bold, color: Colors.white),),
         ),
       ),
     );
