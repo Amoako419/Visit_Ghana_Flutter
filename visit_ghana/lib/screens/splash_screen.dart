@@ -30,7 +30,8 @@ class _SplashState extends State<Splash> {
          decoration: const BoxDecoration(
     image: DecorationImage(
     image: AssetImage("assets/images/flag.jpg"),
-    fit: BoxFit.cover,
+    fit: BoxFit.fitWidth,
+    
     ),
 ),
           child: const Text("VISIT GHANA",style: TextStyle(fontSize: 24.0,fontWeight: FontWeight.bold, color: Colors.white),),
