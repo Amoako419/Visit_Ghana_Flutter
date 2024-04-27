@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:visit_ghana/screens/Firstpage.dart';
 // import 'package:visit_ghana/main.dart';
-import 'package:visit_ghana/screens/home_screen.dart';
+
 
 class Splash extends StatefulWidget{
   const Splash({super.key});

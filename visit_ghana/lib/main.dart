@@ -13,14 +13,6 @@ class VisitGhana extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Visit Ghana',
-      // home: Scaffold(
-      //   appBar: AppBar(
-      //     title: const Text('Visit Ghana'),
-      //   ),
-      //   body: const Center(
-      //     child: Text('Welcome to Ghana!'),
-      //   ),
-      // ),
       home:Splash(),
     );
   }
