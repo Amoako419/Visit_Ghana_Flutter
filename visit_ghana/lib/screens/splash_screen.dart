@@ -55,22 +55,35 @@ class _SplashState extends State<Splash> {
 
   Widget _login(){
     return Container(
-    margin: EdgeInsets.all(20.0),
       child:Column(
         children:[
        ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white),),
-       style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.blue)),
+      style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+    minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
+    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+        EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
+    ),
+    ),
+
        ),
+      
       ElevatedButton(
     onPressed: () {
     // Handle button press
     },
     child: const Text("Sign up",style: TextStyle(color: Colors.white)),
-    style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),// Use MaterialStateProperty for dynamic styling
-    
+    style:  ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+    minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
+    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+        EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
+    ),
     ),
 )
+    
+    
+
         ]
    
      ) );
