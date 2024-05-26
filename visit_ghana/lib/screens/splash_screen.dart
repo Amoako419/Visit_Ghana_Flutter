@@ -57,7 +57,7 @@ class _SplashState extends State<Splash> {
     return Container(
       child:Column(
         children:[
-       ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white),),
+       ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white,fontSize: 18.0),),
       style: ButtonStyle(
     backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
     minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
@@ -67,12 +67,12 @@ class _SplashState extends State<Splash> {
     ),
 
        ),
-      
+      Padding(padding: EdgeInsets.all(10)),
       ElevatedButton(
     onPressed: () {
     // Handle button press
     },
-    child: const Text("Sign up",style: TextStyle(color: Colors.white)),
+    child: const Text("Sign up",style: TextStyle(color: Colors.white,fontSize: 18.0)),
     style:  ButtonStyle(
     backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
     minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
@@ -94,7 +94,7 @@ class _SplashState extends State<Splash> {
       child: const Column(
         children:[
       Text("VISIT GHANA",style: TextStyle(fontSize: 40.0,fontWeight: FontWeight.bold),),
-      Text("Explore the rich culture of the finest country in africa",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
+      Text("Explore the rich culture of the \nfinest country in africa",style: TextStyle(fontSize: 15.0,fontWeight: FontWeight.bold),)
       
       ]
       ,
