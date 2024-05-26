@@ -55,7 +55,7 @@ class _SplashState extends State<Splash> {
 
   Widget _login(){
     return Container(
-    
+    margin: EdgeInsets.all(20.0),
       child:Column(
         children:[
        ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white),),
@@ -77,8 +77,15 @@ class _SplashState extends State<Splash> {
   }
   Widget text(){
     return Container(
-      child: Text("VISIT\nGHANA",style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),),
-    padding: EdgeInsets.all(30.0),
+       padding: EdgeInsets.all(50.0),
+      child: const Column(
+        children:[
+      Text("VISIT GHANA",style: TextStyle(fontSize: 40.0,fontWeight: FontWeight.bold),),
+      Text("Explore the rich culture of the finest country in africa",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),)
+      
+      ]
+      ,
+   )
     );
   }
 }
