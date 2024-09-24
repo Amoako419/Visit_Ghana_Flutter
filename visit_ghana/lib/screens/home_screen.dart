@@ -16,7 +16,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Visit Ghana"),
-      actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.manage_search_outlined))],
+      actions: [IconButton(onPressed: (){
+        
+      }, icon: const Icon(Icons.manage_search_outlined))],
       ),
       drawer: Drawer(
         child: ListView(

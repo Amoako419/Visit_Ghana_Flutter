@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:visit_ghana/screens/Firstpage.dart';
+
 // import 'package:visit_ghana/main.dart';
 
 
@@ -43,7 +43,7 @@ class _SplashState extends State<Splash> {
   Widget _image(){
     return Container(
          width: 500,
-          height: 300,
+          height: 400,
           decoration: const BoxDecoration(
     image: DecorationImage(
     image: AssetImage("assets/images/flag.jpg"),
@@ -55,38 +55,41 @@ class _SplashState extends State<Splash> {
 
   Widget _login(){
     return Container(
-      child:Column(
-        children:[
-       ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white,fontSize: 18.0),),
-      style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-    minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
-    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-        EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
-    ),
-    ),
-
-       ),
-      Padding(padding: EdgeInsets.all(10)),
-      ElevatedButton(
-    onPressed: () {
-    // Handle button press
-    },
-    child: const Text("Sign up",style: TextStyle(color: Colors.white,fontSize: 18.0)),
-    style:  ButtonStyle(
-    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-    minimumSize: MaterialStateProperty.all<Size>(Size(200, 60)), // Set minimum size
-    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-        EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
-    ),
-    ),
-)
-    
-    
-
-        ]
-   
-     ) );
+      child:Padding(
+        padding: const EdgeInsets.all(45.0),
+        child: Row(
+          children:[
+         ElevatedButton(onPressed: (){}, child: const Text("Log in",style: TextStyle(color: Colors.white,fontSize: 18.0),),
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)), // Set minimum size
+            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+          EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
+            ),
+            ),
+        
+         ),
+        Padding(padding: EdgeInsets.all(10)),
+        ElevatedButton(
+            onPressed: () {
+        
+            },
+            child: const Text("Sign up",style: TextStyle(color: Colors.white,fontSize: 18.0)),
+            style:  ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)), // Set minimum size
+            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+          EdgeInsets.symmetric(horizontal: 40, vertical: 20), // Add padding 
+            ),
+            ),
+        )
+            
+            
+        
+          ]
+           
+             ),
+      ) );
   }
   Widget text(){
     return Container(
